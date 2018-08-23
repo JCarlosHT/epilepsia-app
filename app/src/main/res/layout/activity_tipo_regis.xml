@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tipo_regis">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="310dp"
+        android:layout_height="99dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="58dp"
+        android:text="Seleccione tipo de usuario"
+        android:textSize="30sp"
+        app:fontFamily="monospace" />
+
+
+    <Button
+        android:layout_width="215dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="56dp"
+        android:text="Continuar"
+        android:onClick="onClick"
+        android:id="@+id/Continuar"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="243dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="116dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:layout_width="224dp"
+            android:layout_height="77dp"
+            android:text="Contacto de emergencia"
+            android:textSize="24sp"
+            android:id="@+id/radio1"/>
+
+        <RadioButton
+            android:layout_width="224dp"
+            android:layout_height="77dp"
+            android:text="Usuario con epilepsia"
+            android:textSize="24sp"
+            android:id="@+id/radio2"/>
+    </RadioGroup>
+
+</RelativeLayout>

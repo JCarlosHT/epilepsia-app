@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Perfil_medico">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="106dp"
+        android:layout_height="138dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/logo" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="158dp"
+        android:ems="10"
+        android:hint="Edad"
+        android:inputType="number" />
+
+
+    <EditText
+        android:id="@+id/editText12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="104dp"
+        android:ems="10"
+        android:hint="Hospital de preferencia"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/Continuar"
+        android:layout_width="222dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="41dp"
+        android:onClick="Contin"
+        android:text="Continuar" />
+
+    <CheckBox
+        android:id="@+id/checkBox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/editText7"
+        android:layout_marginTop="217dp"
+
+        android:text="Alergias"
+        tools:ignore="RtlCompat" />
+
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/editText7"
+        android:layout_marginBottom="221dp"
+        android:text="Enfermedades alternas"
+        tools:ignore="RtlCompat"
+        android:layout_alignLeft="@+id/editText7" />
+
+    <EditText
+        android:id="@+id/editText6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="164dp"
+        android:ems="10"
+        android:hint="Tipo de sangre"
+        android:inputType="textPersonName" />
+
+    <RadioGroup
+        android:layout_width="335dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        tools:ignore="RtlCompat">
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="86dp"
+            android:layout_height="21dp"
+            android:layout_alignStart="@+id/editText7"
+            android:layout_centerVertical="true"
+            android:text="Hombre" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="85dp"
+            android:layout_height="20dp"
+            android:layout_alignEnd="@+id/editText7"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="20dp"
+            android:text="Mujer" />
+    </RadioGroup>
+
+</RelativeLayout>
