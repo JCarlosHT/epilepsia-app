@@ -16,6 +16,8 @@ public class tipo_regis extends AppCompatActivity {
         setContentView(R.layout.activity_tipo_regis);
       familiar=(RadioButton)findViewById(R.id.radio1);
       usuario=(RadioButton)findViewById(R.id.radio2);
+
+
     }
     public void onClick(View view){
         if(view.getId()==R.id.Continuar)
@@ -27,12 +29,14 @@ public class tipo_regis extends AppCompatActivity {
     {
         if(familiar.isChecked()==true)
         {
-            Toast toast1 = Toast.makeText(getApplicationContext(), "Prueba ASF", Toast.LENGTH_SHORT);
-            toast1.show();
+            Intent R_u = new Intent(this,Regis_us.class);
+            R_u.putExtra("Parametro",1);
+            startActivity(R_u);
 
         }else if (usuario.isChecked()==true)
         {
             Intent R_u = new Intent(this,Regis_us.class);
+            R_u.putExtra("Parametro",2);
             startActivity(R_u);
         }else{
             Toast toast1 = Toast.makeText(getApplicationContext(), "Seleccione una opción", Toast.LENGTH_SHORT);

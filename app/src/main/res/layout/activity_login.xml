@@ -27,10 +27,15 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="187dp"
+        android:alpha="#FFFFFF"
+        android:autoLink="none"
+
         android:ems="10"
         android:hint="Nombre de usuario"
-
-        android:inputType="textPersonName" />
+        android:inputType="textPersonName"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textColorLink="#FFFFFF" />
 
     <EditText
         android:id="@+id/Contraseña"
