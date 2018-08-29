@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-    <RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -12,12 +12,14 @@
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="218dp"
-        android:layout_height="wrap_content"
+        android:layout_height="35dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="75dp"
-        android:text="Iniciar sesión"
+        android:background="@drawable/botones"
         android:onClick="ini_se"
+        android:text="Iniciar sesión"
+        android:textColor="#ffffff"
         tools:ignore="RtlCompat" />
 
     <EditText
@@ -27,15 +29,15 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="187dp"
-        android:alpha="#FFFFFF"
         android:autoLink="none"
-
         android:ems="10"
         android:hint="Nombre de usuario"
+        android:drawableLeft="@drawable/usu"
         android:inputType="textPersonName"
         android:textColor="#FFFFFF"
         android:textColorHint="#FFFFFF"
-        android:textColorLink="#FFFFFF" />
+        android:textSize="18sp"
+        android:theme="@style/CampoTexto1" />/>
 
     <EditText
         android:id="@+id/Contraseña"
@@ -46,7 +48,12 @@
         android:layout_marginBottom="244dp"
         android:ems="10"
         android:hint="Contraseña"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:textColor="#FFFFFF"
+        android:drawableLeft="@drawable/contra"
+        android:textColorHint="#FFFFFF"
+        android:textSize="18sp"
+        android:theme="@style/CampoTexto1" />
 
     <ImageView
         android:id="@+id/imageView"
@@ -60,12 +67,14 @@
     <Button
         android:id="@+id/button3"
         android:layout_width="217dp"
-        android:layout_height="wrap_content"
+        android:layout_height="34dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="14dp"
+        android:layout_marginBottom="23dp"
+        android:background="@drawable/botones"
         android:onClick="Regis"
-        android:text="Registro" />
+        android:text="Registro"
+        android:textColor="#ffffff" />
 
     <Switch
         android:id="@+id/switch2"
@@ -75,6 +84,10 @@
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="175dp"
         android:text="Recordar"
+        android:textColor="#ffffff"
         android:textOff="No"
-        android:textOn="Si" />
-    </RelativeLayout>
+        android:textOn="Si"
+        android:textSize="14sp"
+
+        android:theme="@style/CampoTexto1"/>
+</RelativeLayout>

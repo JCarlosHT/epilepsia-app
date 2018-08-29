@@ -77,7 +77,9 @@ public class Perfil_medico extends AppCompatActivity {
             if (TextUtils.isEmpty(sangre)||TextUtils.isEmpty(edad)||TextUtils.isEmpty(hospital)||(m.isChecked()==false&&h.isChecked()==false)){
                 Toast.makeText(this,"Faltan datos necesarios",Toast.LENGTH_SHORT).show();
             }else {
-                Toast.makeText(this, "Registro exitoso", Toast.LENGTH_SHORT).show();
+                Intent menu = new Intent(this,menu_epi.class);
+                menu.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(menu);
             }
     }
 }

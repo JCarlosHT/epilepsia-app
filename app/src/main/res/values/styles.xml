@@ -8,6 +8,11 @@
         <item name="colorAccent">@color/colorAccent</item>
 
     </style>
+    <style name="CampoTexto1" parent="Theme.AppCompat.Light">
+        <item name="colorControlNormal">#ffffff</item>
+        <item name="colorControlActivated">#0011ff</item>
+
+    </style>
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>

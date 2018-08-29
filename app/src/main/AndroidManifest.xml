@@ -19,7 +19,8 @@
         <activity android:name=".tipo_regis" />
         <activity android:name=".Regis_us" />
         <activity android:name=".Perfil_medico" />
-        <activity android:name=".Alergias"></activity>
+        <activity android:name=".Alergias" />
+        <activity android:name=".menu_epi"></activity>
     </application>
 
 </manifest>

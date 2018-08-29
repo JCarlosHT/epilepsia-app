@@ -17,21 +17,25 @@
         android:layout_marginEnd="20dp"
         android:layout_marginTop="58dp"
         android:text="Seleccione tipo de usuario"
+        android:textColor="#ffffff"
         android:textSize="30sp"
         app:fontFamily="monospace" />
 
 
     <Button
+        android:id="@+id/Continuar"
         android:layout_width="215dp"
-        android:layout_height="wrap_content"
+        android:layout_height="33dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_marginBottom="56dp"
-        android:text="Continuar"
+        android:background="@drawable/botones"
         android:onClick="onClick"
-        android:id="@+id/Continuar"/>
+        android:text="Continuar"
+        android:textColor="#ffffff" />
 
     <RadioGroup
+        android:theme="@style/CampoTexto1"
         android:layout_width="match_parent"
         android:layout_height="243dp"
         android:layout_alignParentBottom="true"
@@ -40,18 +44,20 @@
         android:orientation="vertical">
 
         <RadioButton
+            android:id="@+id/radio1"
             android:layout_width="224dp"
             android:layout_height="77dp"
             android:text="Contacto de emergencia"
-            android:textSize="24sp"
-            android:id="@+id/radio1"/>
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
 
         <RadioButton
+            android:id="@+id/radio2"
             android:layout_width="224dp"
             android:layout_height="77dp"
             android:text="Usuario con epilepsia"
-            android:textSize="24sp"
-            android:id="@+id/radio2"/>
+            android:textColor="#ffffff"
+            android:textSize="24sp" />
     </RadioGroup>
 
 </RelativeLayout>
